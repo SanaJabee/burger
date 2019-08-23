@@ -55,7 +55,8 @@ class BurgerBuilder extends Component {
                 {/*<div>Burger</div>*/}
                 <Burger ingredients = {this.state.ingredients}/>
                 {/*<div>Build controls</div>*/}
-                <BuildControls />
+                <BuildControls
+                ingredientAdded ={this.addIngredientHandler} />
             </Auxi>
         );
     }
